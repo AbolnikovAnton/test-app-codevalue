@@ -24,7 +24,7 @@ const ControlPanel = () => {
             }}>Add</Button>
             <SearchInput onChange={(e) => {
                 dispatch(filterProductsAction(e.target.value.toLocaleLowerCase()));
-            }} value={filterText} className="fa-light fa-magnifying-glass" placeholder='search products'/>
+            }} value={filterText}  placeholder='search products'/>
             <div>
                 <Label>Sort by:</Label>
                 <SortDropdown defaultValue={sortBy} onChange={(e) => {
